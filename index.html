@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voxel Sphere Generator</title>
+    <link rel="stylesheet/less" type="text/css" href="assets/less/styles.less">
+</head>
+<body>
+    <div data-aspect-ratio="4:3">
+        <canvas id="stage" width="1024" height="768"></canvas>
+    </div>
+    <form method="get">
+        <fieldset>
+            <div>
+                <label for="radius">Radius</label>
+                <input type="number" min="1" max="50" step="1" name="radius" value="5" id="radius">
+            </div>
+            <div>
+                <label for="eq">Equal</label>
+                <input type="checkbox" name="eq" value="1" id="eq">
+            </div>
+            <input id="go" type="submit" value="go">
+        </fieldset>
+    </form>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/less.min.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/TrackballControls.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
